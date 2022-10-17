@@ -125,15 +125,30 @@
 
 
 #nombre, #email, #asunto, #mensaje{
-    opacity: 0.3;
-    border: 3px;
-    border-color: #3ee8df;
+    background-color: #3ee8df;
+
 }
 
-.form-group{
-    background-color: #3ee8df;
-    opacity: 0.3;
-    border: 2px;
+.wrapper {
+    width: 500px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.progress-bar-fill {
+    display: block;
+    height: 10px;
+    width: 40px;
+    background-color: #65efd8;
+    border-radius: 4px;
+    
+    transition: width 100ms ease-in-out;
 }
 
 .btn{
@@ -143,4 +158,5 @@
     background-color: #ffffff;
 }
 
-/*https://colors.muz.li/palette/9999ff/f4b381/c126ff/3ee8df/dddd2e*/
+/*https://colors.muz.li/palette/9999ff/f4b381/c126ff/3ee8df/dddd2e
+https://nikitahl.com/progress-bar-css*/
