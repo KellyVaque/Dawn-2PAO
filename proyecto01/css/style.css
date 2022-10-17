@@ -1,10 +1,146 @@
-.logo{
-    height: 100px;
-    width: 100px;
+*{
+    font-family: 'Lato', sans-serif;
 
+}
+.main-nav {
+    height: 90px;
+}
+
+.logo {
+    color: #4e5166;
+    line-height: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.navlinks {
+    list-style: none;
+    float: right;
+    line-height: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navlinks li a {
+    color: #4e5166;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.3s linear 0s;
+}
+
+.navlinks li a:hover,a:active,a:focus {
+    color: #3139ff;
+    padding-bottom: 7px;
+    
 }
 
 #foto-kv{
     height: 400px;
     width: 300px;
 }
+
+.contact-content {
+
+    padding: 7% 7%;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    align-content: center;
+
+}
+
+.contact {
+    width: 100%;
+    background: #ffffff;
+}
+
+.single-contact-box{
+    width: 49%;
+}
+.contact-details{
+    width: 49%;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+
+}
+.single-contact-map{
+    width: 100%;
+    padding-top: 20%;
+}
+
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 25px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    box-shadow: none;
+    outline: 0 !important;
+    background: #fff;
+    color: #636a82;
+    resize: none;
+}
+
+.single-contact-text{
+    padding-top: 2%;
+}
+
+.contact-form .single-contact-btn {
+    text-align: center;
+    height: 50px;
+    text-transform: capitalize;
+    margin-top: 3px;
+    background: #c126ff;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+    font-family: 'Lora',serif;
+    border-radius: 7px;
+
+}
+
+
+.contact-form .single-contact-btn .contact-btn,
+.contact-form .single-contact-btn .contact-btn:focus {
+    margin-top: 0px;
+    outline: 0;
+    border: 0;
+    color: #ffffff;
+    border-radius: 0px;
+    font-size: 14px;
+
+
+}
+
+
+
+#nombre, #email, #asunto, #mensaje{
+    opacity: 0.3;
+    border: 3px;
+    border-color: #3ee8df;
+}
+
+.form-group{
+    background-color: #3ee8df;
+    opacity: 0.3;
+    border: 2px;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    font-size: 2em !important;
+    background-color: #ffffff;
+}
+
+/*https://colors.muz.li/palette/9999ff/f4b381/c126ff/3ee8df/dddd2e*/

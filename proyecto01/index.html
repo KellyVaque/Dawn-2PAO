@@ -4,26 +4,31 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
-    <header>
-        
-        <nav class="main-nav">
-            
-            <ul class="nav-links">
-                <a class="logo-container" href="#index.html"><img class="logo" src="public/logo.png" alt="logoKV"></a>
+    <header class="top-area">
+        <div class="header-area">
+            <nav class="main-nav">
 
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    
+                <a href="index.html" class="logo">Logo</a>
+                <ul class="navlinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre mi</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
         
         <div class="descripcion">
             <div class="datos">
@@ -43,14 +48,14 @@
 
         <div class="background-foto">
             <div class="foto-perfil">
-                <img class="perfil-kv" id="foto-kv" src="public/logo.png" alt="kellyv">
+                
             </div>
         </div>
 
     </section>
 
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="video-container">
             <p>inserte video aqui</p>
         </div>
@@ -82,7 +87,95 @@
 
     <section class="proyectos"></section>
 
-    <section class="Contacto"></section>
+    <section class="contacto" id="contacto">
+        <div class="contact-content">
+            <div class="single-contact-box">
+                <div class="section-heading-contact text-center">
+                    <h2>Contacto</h2>
+                </div>
+                <div class="contact-form">
+                    <form>         
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="name">
+                                </div>
+                            </div>
+                        </div>
+                                    
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="asunto" placeholder="Asunto" name="asunto">
+                                </div>
+                            </div>         
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="8" id="mensaje" placeholder="Mensaje" name="mensaje"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="single-contact-btn">
+                                    <a class="contact-btn" role="button">Enviar</a>
+                                </div>
+                            </div>
+                        </div>
+                                         
+                    </form>
+                </div>
+                <div class="redes">
+                    
+                </div>
+            </div>
+            
+            <div class="contact-details">
+                <div class="single-contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5638.54819186774!2d-79.94570802265636!3d-2.132306751836211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d6e63ee1dcd6504!2zMsKwMDcnNTkuMyJTIDc5wrA1Nic0MS4wIlc!5e0!3m2!1ses-419!2sec!4v1654224281026!5m2!1ses-419!2sec"
+                        width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="single-contact-text">
+                    <p><i class="fa-solid fa-envelope"></i>&nbsp; ksvaque@espol.edu.ec</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i>&nbsp;+593 99 264 8549</p>
+                </div>
+            
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    <footer id="footer-copyright" class="footer-copyright">
+        <div class="container">
+            <div class="hm-footer-copyright text-center">
+                <p>
+                    &copy; copyright Kelly Vaque. design and developed by <a
+                        >Kelly Vaque</a>
+                </p>
+
+            </div>
+            
+        </div>
+
+
+        
+    </footer>
+
     
 
 </body>
