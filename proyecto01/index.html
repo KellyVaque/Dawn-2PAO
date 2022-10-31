@@ -1,24 +1,37 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
+<!doctype html>
+<html class="no-js" lang="en">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <title>Portfolio</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/responsive.css">
+    <link href="public/fontawesome/css/all.css" rel="stylesheet">
 
 </head>
+
 <body>
+
     <header class="top-area">
         <div class="header-area">
             <nav class="main-nav">
-
-                <a href="index.html" class="logo">Logo</a>
+                <input type="checkbox" id="isChecked" />
+                <label for="isChecked" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a href="index.html" class="logo">K.V</a>
                 <ul class="navlinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre mi</a></li>
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#sobremi">Sobre mi</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
@@ -28,154 +41,267 @@
 
     </header>
 
-    <section class="home" id="home">
-        
-        <div class="descripcion">
-            <div class="datos">
-                <h1> Soy Kelly Vaque</h1>
-                <h3>Desarrolladora, estudiante de ESPOL</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-    
-            </div>
-            <div class="enlaces">
-                <button id="linkedin">linkedin</button>
-                <button id="githun">github</button>
-                <button id="facebook">facebook</button>
-                <button id="twitter">twitter</button>
-            </div>
-            
-        </div>
 
-        <div class="background-foto">
-            <div class="foto-perfil">
-                
+    <section id="inicio" class="inicio">
+        <div class="inicio-content">
+            <div class="single-sobremi-txt">
+                <div class="header-text">
+                    <h2>Hola, soy estudiante de espol y desarrolladora web </h2>
+                    <p>Mi nombre es Kelly Vaque</p>
+
+                    <div class="skills">
+                        <div class="progress-element">
+                            <p class="progress-label">UX</p>
+                            <div class="progress-container">
+                                <progress max="100" value="85">85%</progress>
+                            </div>
+                        </div>
+                        <div class="progress-element">
+                            <p class="progress-label">UI</p>
+                            <div class="progress-container">
+                                <progress max="100" value="70">70%</progress>
+                            </div>
+                        </div>
+                        <div class="progress-element">
+                            <p class="progress-label">SCRUM</p>
+                            <div class="progress-container">
+                                <progress max="100" value="90">90%</progress>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="redes">
+                        <a class="btn" href="https://github.com/KellyVaque"><i class="fa-brands fa-github"></i></a>
+                        <a class="btn" href="https://www.linkedin.com/in/kelly-vaque-a3a27010b/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a class="btn" href="https://www.instagram.com/kelllzv/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a class="btn" href="https://www.facebook.com/kellyvaque.1/"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+
             </div>
+
+            <div class="single-sobremi-img">
+                <img src="public/images/perfil.png" alt="profile_image">
+
+            </div>
+
         </div>
 
     </section>
 
+    <section id="sobremi" class="sobremi">
+        <div class="section-heading text-center">
+            <h2>Acerca de mi</h2>
 
-    <section class="about" id="about">
-        <div class="video-container">
-            <p>inserte video aqui</p>
         </div>
+        <div class="sobremi-content">
 
-        <div class="acerca-de-mi-txt">
-            <div class="acerca-de-mi">
-                <h3>Estudiante - Espol</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <div class="sobremi-txt">
+                <h3>Estudiante de Espol</h3>
+                <p>
+                    Poseo conocimientos en desarrollo frontend, backend, principios de diseño mediante la metodología
+                    Scrum para el
+                    desarrollo de un código eficiente y organizado.
+                </p>
+                <h3>Habilidades Blandas</h3>
+                <ul>
+                    <li>Perseverante</li>
+                    <li>Creativa</li>
+                    <li>Autodidacta</li>
+                    <li>Trabajo en equipo</li>
+                </ul>
+                <h3>Lenguajes</h3>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Basico</th>
+                                <th>Bueno</th>
+                                <th>Excelente</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Java</td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>PHP</td>
+                                <td></td>
+                                <td><i class="fa fa-check" aria-hidden="true"></td>
+                                <td></i></td>
+                            </tr>
+                            <tr>
+                                <td>Ruby</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td></td>
+                                <td></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <div class="acerca-de-mi-skills">
-                <div class="datos">
-                    <p>ecuador</p>
-                    <p>escuela superior politecnica del litoral</p>
-                    <p> ksvs_1996@hotmail.es</p>
+            <div class="sobremi-video">
+                <iframe width="480" height="270" src="https://www.powtoon.com/embed/d0wQPsMnsg4/" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="proyectos" class="proyectos">
+        <div class="section-heading text-center">
+            <h2>Proyectos</h2>
+            <div class="proyectos-content">
+                <div class="proyectos-icon">
+                    <div class="habilidad">
+                        <img src="/public/images/cliente-servidor.jpg" alt="cliente-servidor"></img>
+                        <h2>Cliente - Servidor</h2>
+                        <p>Transferencia de archivos encriptados entre cliente-servidor </p>
+                        <a class="btn"
+                            href="https://github.com/progsis-espol/proyecto-final-fileserver-marin-vaque">Ver</i></a>
+                    </div>
+
                 </div>
 
-                <div class="skills">
-                    <p>html</p>
-                    <p>css</p>
-                    <p>php</p>
-                    <p>python</p>
+                <div class="proyectos-icon">
+                    <div class="habilidad">
+                        <img src="/public/images/cabutos.jpg" alt="cabutos-market"></img>
+                        <h2>Cabutos</h2>
+                        <p>Mantenimiento plataforma web y app movil</p>
+                        <a class="btn" href="https://github.com/CabutoMarket/CabutoFront">Ver</a>
+                    </div>
+
                 </div>
+
 
             </div>
-        </div>
 
     </section>
 
-    <section class="proyectos"></section>
 
-    <section class="contacto" id="contacto">
-        <div class="contact-content">
-            <div class="single-contact-box">
-                <div class="section-heading-contact text-center">
-                    <h2>Contacto</h2>
+
+
+    <section id="contacto" class="contacto">
+
+        <div class="contacto-content">
+            <div class="single-contacto-box">
+                <div class="section-heading-contacto text-center">
+                    <h2>contact me</h2>
                 </div>
-                <div class="contact-form">
-                    <form>         
+                <div class="contacto-form">
+                    <form>
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="name">
-                                </div>
-                            </div>
-                        </div>
-                                    
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
-                                </div>
-                            </div>
-                        </div>
-                            
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="asunto" placeholder="Asunto" name="asunto">
-                                </div>
-                            </div>         
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="8" id="mensaje" placeholder="Mensaje" name="mensaje"></textarea>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre"
+                                        name="name">
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
-                                <div class="single-contact-btn">
-                                    <a class="contact-btn" role="button">Enviar</a>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Email"
+                                        name="email">
                                 </div>
                             </div>
                         </div>
-                                         
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="asunto" placeholder="Asunto"
+                                        name="asunto">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="8" id="mensaje" placeholder="Mensaje"
+                                        name="mensaje"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="single-contacto-btn">
+                                    <a class="contacto-btn" role="button">Enviar</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
                 <div class="redes">
-                    
+                    <a class="btn" href="https://github.com/KellyVaque"><i class="fa-brands fa-github"></i></a>
+                    <a class="btn" href="https://www.linkedin.com/in/kelly-vaque-a3a27010b/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a class="btn" href="https://www.instagram.com/kelllzv/"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="btn" href="https://www.facebook.com/kellyvaque.1/"><i
+                            class="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
-            
-            <div class="contact-details">
-                <div class="single-contact-map">
+
+            <div class="contacto-details">
+                <div class="single-contacto-map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5638.54819186774!2d-79.94570802265636!3d-2.132306751836211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d6e63ee1dcd6504!2zMsKwMDcnNTkuMyJTIDc5wrA1Nic0MS4wIlc!5e0!3m2!1ses-419!2sec!4v1654224281026!5m2!1ses-419!2sec"
                         width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="single-contact-text">
+                <div class="single-contacto-text">
                     <p><i class="fa-solid fa-envelope"></i>&nbsp; ksvaque@espol.edu.ec</p>
                     <p><i class="fa-solid fa-mobile-screen"></i>&nbsp;+593 99 264 8549</p>
                 </div>
-            
+
             </div>
         </div>
-        
+
     </section>
-    
-    
+
+
     <footer id="footer-copyright" class="footer-copyright">
         <div class="container">
             <div class="hm-footer-copyright text-center">
                 <p>
-                    &copy; copyright Kelly Vaque. design and developed by <a
-                        >Kelly Vaque</a>
+                    &copy; copyright Kelly Vaque. design and developed by <a>Kelly Vaque</a>
                 </p>
 
             </div>
-            
+
         </div>
 
 
-        
+
     </footer>
 
-    
+
+
+
+
 
 </body>
+
+</html>

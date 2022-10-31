@@ -1,0 +1,244 @@
+
+@media only screen and (max-width: 320px) {
+  .inicio-content {
+    display: block;
+  }
+    
+  .single-sobremi-txt {
+    width: 100%;
+    box-sizing: border-box;
+    }
+    
+  .single-sobremi-img {
+    width: 100%;
+    box-sizing: border-box;
+    }
+    .single-sobremi-img img {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .sobremi-content {
+      display: block;
+    }
+  
+    .sobremi-txt {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+  .sobremi-video {
+    padding-top: 3%;
+    width: 49%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
+        .sobremi-video iframe,
+        .sobremi-video object,
+        .sobremi-video embed {
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+
+    .habilidades-content {
+      display: block;
+      }
+    
+    .habilidades-icon {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .habilidad {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+
+    .single-contacto-box{
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .contacto-details{
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+}
+
+@media only screen and (max-width: 640px) {
+  .inicio-content{
+    display: block;    
+  }
+  .single-sobremi-txt{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .single-sobremi-img{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .single-sobremi-img img {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .sobremi-content{
+      display: block;
+  }
+  .sobremi-txt{
+    width: 100%;
+    box-sizing: border-box;
+  }
+    .sobremi-video {
+      padding-top: 3%;
+      width: 49%;
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+    }
+  
+    .sobremi-video iframe,
+    .sobremi-video object,
+    .sobremi-video embed {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+     .habilidades-content {
+       display: block;
+     }
+  
+     .habilidades-icon {
+       width: 100%;
+       box-sizing: border-box;
+     }
+  
+     .habilidad {
+       width: 100%;
+       box-sizing: border-box;
+     }
+
+.single-contacto-box {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contacto-details {
+  width: 100%;
+  box-sizing: border-box;
+}
+}
+  
+
+
+@media screen and(max-width:600px) {
+  table {
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+  }
+
+  tr td:first-child {
+    background: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: block;
+    text-align: center;
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
+
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
+}
+
+
+/* Responsive nav bar*/
+@media (max-width: 800px) {
+  .navlinks {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: #222831;
+    right: -100%;
+    transition: all 0.5s;
+  }
+
+  .navlinks li {
+    display: block;
+  }
+
+  .navlinks li a {
+    font-size: 20px;
+  }
+
+  .navlinks li a:hover {
+    border-bottom: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #isChecked:checked~.navlinks {
+    right: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .logo {
+    margin-left: 15px;
+    font-size: 25px;
+  }
+
+  .menu-btn {
+    margin-right: 15px;
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+
+  .table-responsive>.table {
+    margin-bottom: 0;
+  }
+
+  .table-responsive>.table>thead>tr>th,
+  .table-responsive>.table>tbody>tr>th,
+  .table-responsive>.table>tfoot>tr>th,
+  .table-responsive>.table>thead>tr>td,
+  .table-responsive>.table>tbody>tr>td,
+  .table-responsive>.table>tfoot>tr>td {
+    white-space: nowrap;
+  }
+}
