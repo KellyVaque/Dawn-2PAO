@@ -11,6 +11,8 @@ Portofolio personal desarrollado en HTML y CSS Puro, para la practica y correcto
 
 [Proyecto 2](https://github.com/KellyVaque/Dawn-2PAO/tree/main/proyecto02)
 
+Dashboard para consumir la API Cheapshark mediante el uso de gráficos usando Chart.js y Tablas dinámicas. 
+
 [Proyecto 3](https://github.com/KellyVaque/Dawn-2PAO/tree/main/proyecto03)
 
 [Proyecto 4](https://github.com/KellyVaque/Dawn-2PAO/tree/main/proyecto04)
