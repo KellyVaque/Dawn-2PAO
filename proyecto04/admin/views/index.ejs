@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Proyecto4</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/stylesheets/table_datatables.css">
+  <!-- Simple bar CSS -->
+  <link rel="stylesheet" href="/stylesheets/simplebar.css">
+  <!-- Fonts CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Icons CSS -->
+  <link rel="stylesheet" href="/stylesheets/feather.css">
+  <link rel="stylesheet" href="/stylesheets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/stylesheets/whirl/css/pong.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/stylesheets/app-light.css" id="lightTheme">
+  <link rel="stylesheet" href="/stylesheets/app-dark.css" id="darkTheme" disabled>
+</head>
+
+<body class="vertical  light  ">
+  <div class="wrapper">
+    <%- include("partials/nav") -%>
+    <%- include("partials/sidebar") -%>
+    <%- include("partials/main", {arrCustomers:customers} ) -%>
+    <!-- main -->
+  </div> <!-- .wrapper -->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script src="/javascripts/popper.min.js"></script>
+  <script src="/javascripts/moment.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+  <script src="/javascripts/simplebar.min.js"></script>
+  <script src='./javascripts/jquery.stickOnScroll.js'></script>
+  <script src="/javascripts/tinycolor-min.js"></script>
+  <script src="/javascripts/config.js"></script>
+  <script src="/javascripts/apps.js"></script>
+
+</body>
+
+</html>

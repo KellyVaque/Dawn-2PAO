@@ -1,0 +1,70 @@
+<main role="main" class="main-content">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12">
+
+
+        <div id="stores">
+          <h2 class="mb-2 page-title animate__animated animate__lightSpeedInLeft">Ordenes</h2>
+          <p class="card-text animate__animated animate__lightSpeedInLeft">Lista de ordenes por cliente usando la apiFirebase con express y Firebase </p>
+
+        </div>
+
+        <div class="row my-4">
+          <!-- Small table -->
+          <div class="col-md-12">
+            <div class="card shadow">
+              <div class="card-body">
+
+                <!-- table -->
+                <table class="table datatables" id="dataTable-1">
+
+                  <thead>
+                    <tr>
+                      <th>Numero de cliente</th>
+                      <th scope="col-3">Producto</th>
+                      <th scope="col-4">Cantidad</th>
+                      <th scope="col-4">Fecha de entrega</th>
+                      <th scope="col-4">Estado</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <% arrOrders.forEach((order )=> { %>
+                      <% arrOrders.forEach((orde )=> { %>
+                      <tr>
+
+                          <td scope="col-4">
+                            <%= orde.customerNumber %>
+                          </td>
+                          <td scope="col-4">
+                            <%= orde.productName %>
+                          </td>
+                          <td scope="col-4">
+                            <%= orde.quantityOrdered %>
+                          </td>
+                          <td scope="col-4">
+                            <%= orde.shippedDate %>
+                          </td>
+                          <td scope="col-4">
+                            <%= orde.status %>
+                          </td>
+                        
+                        
+                      </tr>
+                      <% }); %>
+                      <% }); %>
+                  </tbody>
+                </table>
+
+              </div>
+
+            </div>
+          </div> <!-- simple table -->
+        </div> <!-- end section -->
+      </div> <!-- .col-12 -->
+    </div> <!-- .row -->
+  </div> <!-- .container-fluid -->
+
+</main> 
+

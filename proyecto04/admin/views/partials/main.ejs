@@ -1,0 +1,57 @@
+<main role="main" class="main-content">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12">
+
+
+        <div id="stores">
+          <h2 class="mb-2 page-title animate__animated animate__lightSpeedInLeft">Clientes</h2>
+          <p class="card-text animate__animated animate__lightSpeedInLeft">Lista de clientes usando la apiSQL con express y sequelize</p>
+
+        </div>
+
+        <div class="row my-4">
+          <!-- Small table -->
+          <div class="col-md-12">
+            <div class="card shadow">
+              <div class="card-body">
+
+                <!-- table -->
+                <table class="table datatables" id="dataTable-1">
+
+                  <thead>
+                    <tr>
+                      <th>Numero de cliente</th>
+                      <th scope="col-3">Nombre</th>
+                      <th scope="col-4">Nombre de contacto</th>
+                      <th scope="col-4">Telefono</th>
+                      <th scope="col-4">Ciudad</th>
+                      <th scope="col-4">Limite de credito</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% arrCustomers.forEach((customer )=> { %>
+                      <tr>
+                        <td scope="col-4"><%= customer.customerNumber %></td>
+                        <td scope="col-4"><%= customer.customerName %></td>
+                        <td scope="col-4"><%= customer.contactFirstName %> <%= customer.contactLastName %></td>
+                        <td scope="col-4"><%= customer.phone %></td>
+                        <td scope="col-4"><%= customer.city %></td>
+                        <td scope="col-4"><%= customer.creditLimit %></td>
+                        <td><a href="/customers/getOrders?id=<%= customer.customerNumber%>" class="settings" title="Settings" data-toggle="tooltip"><i class="fa-solid fa-eye"></i></a></td>
+                      </tr>
+                    <% }); %>
+                  </tbody>
+                </table>
+
+              </div>
+
+            </div>
+          </div> <!-- simple table -->
+        </div> <!-- end section -->
+      </div> <!-- .col-12 -->
+    </div> <!-- .row -->
+  </div> <!-- .container-fluid -->
+
+</main> 
+
